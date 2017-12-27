@@ -7,8 +7,12 @@ export function sports(state = {}, action) {
                 loading: true
             };
         case sportsConstants.GET_SPORTS_SUCCESS:
+            return action.sports;
+        case sportsConstants.GET_SPORTS_FAILURE:
             return {
-                items: 
-            }
+
+            };
+        default: 
+            return state;
     }
 }

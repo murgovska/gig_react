@@ -1,7 +1,11 @@
 import { combineReducers } from 'redux';
 
-import { sports } from '../sports.reducer';
+import { sports } from './sports.reducer';
+import { prematchCategory } from './prematchCategory.reducer';
 
 const rootReducer = combineReducers({
-    sports
+    sports,
+    prematchCategory
   });
+
+  export default rootReducer;
