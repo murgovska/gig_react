@@ -1,7 +1,6 @@
 import { sportsConstants } from '../constants';
 import { sportsService } from '../services';
 import { history } from '../helpers';
-// import { error } from 'util';
 
 export const sportsActions = {
     getAllSports

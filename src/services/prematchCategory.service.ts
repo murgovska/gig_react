@@ -1,15 +1,15 @@
 import * as sportsApi from '../api/sports.api';
 
-export const sportsService = {
-    getAllSports
+export const prematchCategoryService = {
+    getPrematchCategory
 }
 
-function getAllSports() {
+function getPrematchCategory() {
     const requestOptions = {
         method: 'GET'
-    };
+    }
 
-    return fetch (sportsApi.getAllSportsApi, requestOptions).then(handleResponse);
+    return fetch (sportsApi.getPrematchCategoryApi, requestOptions).then(handleResponse);
 }
 
 function handleResponse (response) {
